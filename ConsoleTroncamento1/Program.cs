@@ -13,9 +13,12 @@ namespace ConsoleTroncamento1
             // Inizializzazione variabili
          
             double erroretroncamento = 0.000000095;
-            double velocità = 1676;
+            double velocità = 0;
             double erroretempo = 0;
             double errorespazio = 0;
+
+            Console.WriteLine("Inserisci la velocità:");
+            velocità = Convert.ToDouble(Console.ReadLine());
 
             erroretempo = erroretroncamento * 100 * 60 * 60 * 10;
 
